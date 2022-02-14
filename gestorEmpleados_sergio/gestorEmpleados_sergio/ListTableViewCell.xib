@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="gestorEmpleados_sergio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v74-gq-1Y0">
+                        <rect key="frame" x="0.5" y="4" width="129" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="129" id="AGw-kt-TwO"/>
+                            <constraint firstAttribute="height" constant="21" id="WhY-wR-nRt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwC-c1-ehv">
+                        <rect key="frame" x="2.5" y="72" width="135" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="135" id="Ebw-tG-cpk"/>
+                            <constraint firstAttribute="height" constant="21" id="FeQ-dD-Vvn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoY-ps-cOo">
+                        <rect key="frame" x="143" y="41" width="144" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="144" id="W9o-0V-ZhZ"/>
+                            <constraint firstAttribute="height" constant="21" id="pYk-P7-2dU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dwC-c1-ehv" firstAttribute="top" secondItem="v74-gq-1Y0" secondAttribute="bottom" constant="47" id="2xv-iQ-Cub"/>
+                    <constraint firstItem="v74-gq-1Y0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-95" id="ZAO-3g-g1J"/>
+                    <constraint firstItem="dwC-c1-ehv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-90" id="eH3-Ek-1hD"/>
+                    <constraint firstItem="uoY-ps-cOo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="55" id="gl1-G7-Rlk"/>
+                    <constraint firstItem="v74-gq-1Y0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="p3u-6N-2BQ"/>
+                    <constraint firstItem="uoY-ps-cOo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="41" id="yh4-Ng-wXb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="jobLabel" destination="dwC-c1-ehv" id="lbv-zm-Azi"/>
+                <outlet property="nameLabel" destination="v74-gq-1Y0" id="o6e-b9-3xv"/>
+                <outlet property="salaryLabel" destination="uoY-ps-cOo" id="s5e-J3-Jc7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="128.90625"/>
+        </tableViewCell>
+    </objects>
+</document>
